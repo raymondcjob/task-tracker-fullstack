@@ -1,5 +1,7 @@
 # Task Tracker (Full-Stack)
 
+Full-stack task management application built with ASP.NET Core, React, and PostgreSQL.
+
 ## Overview
 
 A full-stack task management application built with:
