@@ -1,45 +1,36 @@
-# Task Tracker (Full-Stack)
+# Task Tracker
 
 Full-stack task management application built with ASP.NET Core, React, and PostgreSQL.
 
-## Overview
-
-A full-stack task management application built with:
-
-* ASP.NET Core (.NET 10)
-* PostgreSQL
-* Entity Framework Core
-* React (Vite)
-
 ## Features
 
-* Create tasks
-* View all tasks
-* Update task completion
-* Delete tasks
+* Create, update, and delete tasks
+* Toggle task completion status
+* RESTful API with persistent storage
+* Responsive frontend with real-time updates
 
 ## Tech Stack
 
 ### Backend
 
-* ASP.NET Core Web API
+* ASP.NET Core Web API (.NET 10)
 * Entity Framework Core
 * PostgreSQL
 
 ### Frontend
 
 * React
-* Axios
 * Vite
+* Axios
 
-## How to Run
+## Getting Started
 
-### Backend
+### 1. Run Backend
 
 cd TaskApi
 dotnet run
 
-### Frontend
+### 2. Run Frontend
 
 cd task-ui
 npm install
@@ -47,8 +38,14 @@ npm run dev
 
 ## API Endpoints
 
-* GET /api/task
-* GET /api/task/{id}
-* POST /api/task
-* PUT /api/task/{id}
-* DELETE /api/task/{id}
+| Method | Endpoint       | Description     |
+| ------ | -------------- | --------------- |
+| GET    | /api/task      | Get all tasks   |
+| GET    | /api/task/{id} | Get task by ID  |
+| POST   | /api/task      | Create new task |
+| PUT    | /api/task/{id} | Update task     |
+| DELETE | /api/task/{id} | Delete task     |
+
+## Screenshot
+
+![Task Tracker Screenshot](screenshots/app.png)
